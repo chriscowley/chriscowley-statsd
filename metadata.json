@@ -1,0 +1,33 @@
+{
+  "name": "chriscowley-statsd",
+  "version": "0.1.0",
+  "author": "chriscowley",
+  "summary": "Install Statsd",
+  "license": "Apache-2.0",
+  "source": "https://github.com/chriscowley/chriscowley-statsd.git",
+  "project_page": "https://github.com/chriscowley/chriscowley-statsd",
+  "issues_url": "https://github.com/chriscowley/chriscowley-statsd/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
