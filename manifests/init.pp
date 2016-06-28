@@ -13,6 +13,7 @@
 class statsd (
   $package_name = $::statsd::params::package_name,
   $service_name = $::statsd::params::service_name,
+  $graphitehost = $::statsd::params::graphitehost,
 ) inherits ::statsd::params {
 
   # validate parameters here

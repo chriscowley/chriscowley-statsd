@@ -18,7 +18,11 @@ describe 'statsd' do
 
           it { is_expected.to contain_service('statsd') }
           it { is_expected.to contain_package('statsd').with_ensure('present') }
-          it { should contain_file('/etc/statsd/localConfig.js').with_content(/graphiteHost/)}
+          it { should contain_file('/etc/statsd/config.js').with_content(/graphiteHost:/)}
+        end
+        context "Defined with remote graphite host" do
+          let(:params) { { :graphitehost => 'mygraphite.example.com' } }
+          it { should contain_file('/etc/statsd/config.js').with_content(/mygraphite.example.com/)}
         end
       end
     end

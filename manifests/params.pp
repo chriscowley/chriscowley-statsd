@@ -13,4 +13,5 @@ class statsd::params {
       fail("${::operatingsystem} not supported")
     }
   }
+  $graphitehost = 'localhost'
 }
