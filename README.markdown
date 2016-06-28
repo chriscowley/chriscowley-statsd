@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/chriscowley/chriscowley-statsd.svg?branch=master)](https://travis-ci.org/chriscowley/chriscowley-statsd)
+
 #### Table of Contents
 
 1. [Overview](#overview)
