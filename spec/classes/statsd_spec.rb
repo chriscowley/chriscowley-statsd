@@ -18,6 +18,7 @@ describe 'statsd' do
 
           it { is_expected.to contain_service('statsd') }
           it { is_expected.to contain_package('statsd').with_ensure('present') }
+          it { should contain_file('/etc/statsd/localConfig.js').with_content(/graphiteHost/)}
         end
       end
     end
