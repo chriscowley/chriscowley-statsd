@@ -5,10 +5,6 @@
 #
 class statsd::params {
   case $::osfamily {
-    'Debian': {
-      $package_name = 'statsd'
-      $service_name = 'statsd'
-    }
     'RedHat', 'Amazon': {
       $package_name = 'statsd'
       $service_name = 'statsd'
